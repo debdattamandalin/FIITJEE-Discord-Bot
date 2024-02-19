@@ -2,9 +2,9 @@ import {Client, IntentsBitField, ActivityType, REST, Routes, EmbedBuilder, Appli
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 //Bot Variables
-const BotToken = "MTIwODY3NDc1NjQyNjIwMzEzNg.GLcknL.gfN1-r2BIn7RQ32iDxIW2Q2N0ODlX_OrhQrdTw";
-const BotID = "1208674756426203136";
-const GoogleAIKey = new GoogleGenerativeAI("AIzaSyBDeB1AWAo_Poq6j_7Kn-PlwKI_i8adMmg");
+const BotToken = "BotToken";
+const BotID = "BotID";
+const GoogleAIKey = new GoogleGenerativeAI("GoogleAIKey");
 
 const BOT = new Client({
     intents: [
