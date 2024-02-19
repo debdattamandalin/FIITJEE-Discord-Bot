@@ -112,7 +112,7 @@ BOT.on("interactionCreate", (Interaction) => {
             { name:"Bot Open Source Repository", value:"https://github.com/debdattamandalin/FIITJEE-Discord-Bot"},
         )
         .addFields(
-            { name:"Last Updated", value:"18/02/2024"},
+            { name:"Last Updated", value:"19/02/2024"},
         )
         .addFields(
             { name:"Bot Latency", value: `${Date.now() - Interaction.createdTimestamp} Milliseconds`},
