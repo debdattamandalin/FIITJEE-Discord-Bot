@@ -1,6 +1,6 @@
 //Imports
 
-import {Client, IntentsBitField, ActivityType, REST, Routes, EmbedBuilder, ApplicationCommandOptionType, SlashCommandBuilder, GatewayIntentBits} from "discord.js"
+import {Client, IntentsBitField, ActivityType, REST, Routes, EmbedBuilder, ApplicationCommandOptionType} from "discord.js"
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import ms from 'ms';
 
@@ -18,7 +18,6 @@ const BOT = new Client({
         IntentsBitField.Flags.GuildMembers,
         IntentsBitField.Flags.GuildMessages,
         IntentsBitField.Flags.MessageContent,
-        GatewayIntentBits.Guilds
     ],
 });
 
@@ -112,10 +111,7 @@ BOT.on("interactionCreate", (Interaction) => {
             { name:"Bot Open Source Repository", value:"https://github.com/debdattamandalin/FIITJEE-Discord-Bot"},
         )
         .addFields(
-            { name:"Last Updated", value:"19/02/2024"},
-        )
-        .addFields(
-            { name:"Bot Latency", value: `${Date.now() - Interaction.createdTimestamp} Milliseconds`},
+            { name:"Bot Latency", value: `${Date.now() - Interaction.createdTimestamp}ms`},
         )
         .addFields(
             { name:"Bot Uptime", value: `${ms(BOT.uptime)}`},
