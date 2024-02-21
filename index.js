@@ -147,10 +147,6 @@ BOT.on("interactionCreate", (Interaction) => {
 //invite
 
     if (Interaction.commandName === "invite") {
-        Interaction.reply("https://discord.gg/2KfGsTXxFJ")
-    }
-
-    if (Interaction.commandName === "help") {
         const Embed = new EmbedBuilder()
         .setColor(0xFFF759)
         .setTitle("FIITJEE Server Invite Link")
