@@ -150,6 +150,14 @@ BOT.on("interactionCreate", (Interaction) => {
         Interaction.reply("https://discord.gg/2KfGsTXxFJ")
     }
 
+    if (Interaction.commandName === "help") {
+        const Embed = new EmbedBuilder()
+        .setColor(0xFFF759)
+        .setTitle("FIITJEE Server Invite Link")
+        .setDescription("https://discord.gg/2KfGsTXxFJ");
+        Interaction.reply({embeds: [Embed]});
+    }
+
 //invite
 
     if (Interaction.commandName === "report") {
