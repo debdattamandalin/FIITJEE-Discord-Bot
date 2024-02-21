@@ -1,7 +1,6 @@
 {
-  "name": "discord-bot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "FIITJEE-Discord-Bot",
+  "description": "The discord bot specifically built for FIITJEE discord server.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
