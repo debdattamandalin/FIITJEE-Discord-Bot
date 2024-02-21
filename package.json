@@ -1,5 +1,5 @@
 {
-  "name": "FIITJEE-Discord-Bot",
+  "name": "fiitjee-discord-bot",
   "description": "The discord bot specifically built for FIITJEE discord server.",
   "main": "index.js",
   "scripts": {
